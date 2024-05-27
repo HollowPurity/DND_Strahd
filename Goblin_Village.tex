@@ -1,0 +1,56 @@
+\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{book}
+
+% Use babel or polyglossia to automatically redefine macros for terms
+% Armor Class, Level, etc...
+% Default output is in English; captions are located in lib/dndstrings.sty.
+% If no captions exist for a language, English will be used.
+%1. To load a language with babel:
+%	\usepackage[<lang>]{babel}
+%2. To load a language with polyglossia:
+%	\usepackage{polyglossia}
+%	\setdefaultlanguage{<lang>}
+\usepackage[english]{babel}
+%\usepackage[italian]{babel}
+% For further options (multilanguage documents, hypenations, language environments...)
+% please refer to babel/polyglossia's documentation.
+
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+\usepackage[layout=true]{dnd}
+
+\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+\MakeShortVerb{|}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+  breaklines=true,
+}
+
+\title{Das Goblin Dorf\\
+\large Eine schaukunst Goblinoider Kultur}
+\author{von Jannik und Greg}
+\date{27.05.2024}
+
+\begin{document}
+
+\frontmatter
+
+\maketitle
+
+\tableofcontents
+
+\mainmatter%
+
+\part{Hintergrundgeschichte}
+
+\chapter{Einleitung}
+
+\DndDropCapLine{D}{ieses Werk ist ein Kompendium} der Hintergrundgeschichte von Azazael und Metatron weiter beleuchten soll. Dabei wird beschrieben, wie das Dorf der beiden Gestalltet war zum Zeitpunkt, als beide das Dorf verlassen haben. Ebenfalls wird in diesem Werk die verschiedensten Einrichtungen und NPC beschrieben, welche hier leben und Ihrem Werk nachgehen.
+
+\end{document}
